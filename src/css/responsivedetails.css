@@ -18,31 +18,37 @@
 }
 
 @media (max-width: 500px) {
+
+    
     .cabecalho {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
 
+    main {
+        width: 450px;
+    }
+
     main h1 {
         color: black;
         position: relative;
-        left: -120px;
+       
     }
 
 
     main p {
         color: #000000;
         text-align: center;
-        width: 60%;
-        font-size: 18px;
+        width: 90%;
+        font-size: 16px;
         font-weight: bold;
     }
 
     main h2 {
         color: black;
         position: relative;
-        left: -130px
+        
     }
 
     main img {
