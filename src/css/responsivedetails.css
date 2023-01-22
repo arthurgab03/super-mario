@@ -12,20 +12,20 @@
         justify-content: center;
         height: auto;
         gap: 30px;
-        background-color: white;
+        background-color: #f44336;
         height: 600px;
     }
 
     main h1 {
-        color: black;
+        color: #ffffff;
     }
 
     main p {
-        color: black
+        color: #ffffff;
     }
 
     main h2 {
-        color: black;
+        color: #ffffff;
     }
 }
 
@@ -43,14 +43,14 @@
     }
 
     main h1 {
-        color: black;
+        color: #ffffff;
         position: relative;
        
     }
 
 
     main p {
-        color: #000000;
+        color: #ffffff;
         text-align: center;
         width: 85%;
         font-size: 14px;
@@ -58,7 +58,7 @@
     }
 
     main h2 {
-        color: black;
+        color: #ffffff;
         position: relative;
         
     }

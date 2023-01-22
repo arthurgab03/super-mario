@@ -45,19 +45,19 @@
         max-width: 75%;
     }
 
-    .modal .fechar-modal {
+    .popup .close-popup {
         width: 30px;
         line-height: 30px;
     }
 
-    .modal #video {
+    .popup #video {
         width: 300px;
         height: 169px;
     }
 }
 
 @media (max-width: 376px) {
-    .modal #video {
+    .popup #video {
         width: 250px;
         height: 140px;
     }

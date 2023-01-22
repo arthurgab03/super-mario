@@ -99,7 +99,7 @@ body {
 }
 
 
-.modal {
+.popup {
     background-color: rgba(52, 52, 53, 0.749);
     position: fixed;
     width: 100vw;
@@ -109,7 +109,7 @@ body {
     visibility: hidden;
 }
 
-.conteudo-modal {
+.content-popup {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +119,7 @@ body {
     gap: 15px;
 }
 
-.fechar-modal {
+.close-popup {
     background-color: #FFFFFF;
     color: #f03a17;
     font-weight: bold;
@@ -129,13 +129,12 @@ body {
     border-radius: 10px;
 }
 
-.fechar-modal:hover {
+.close-popup:hover {
     cursor: pointer;
     background-color: black;
-
 }
 
-.fechar-modal:active {
+.close-popup:active {
     background-color: orange;
 }
 
@@ -145,7 +144,7 @@ body {
     height: 360px;
 }
 
-.modal.aberto { /* percebe-se as classes juntas, isso significa que essa instrução só vale para alguma tag que tenha as duas classes, isso vai servir para o js onde iremos utilizar o classList.toggle para fazer a "mágica" acontecer (o pop-up de trailer irá aparecer ao ser clicado */
+.popup.aberto { /* percebe-se as classes juntas, isso significa que essa instrução só vale para alguma tag que tenha as duas classes, isso vai servir para o js onde iremos utilizar o classList.toggle para fazer a "mágica" acontecer (o pop-up de trailer irá aparecer ao ser clicado */
     opacity: 1;
     visibility: visible
 }
