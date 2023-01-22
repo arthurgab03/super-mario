@@ -1,0 +1,54 @@
+@media (max-width: 1200px) {
+    body {
+        background-color: #f44336;
+    }
+
+    .fundo-video {
+        display: none;
+    }
+
+    main {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+        background-color: white;
+        height: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main h1 {
+        color: black;
+        position: relative;
+        left: -120px;
+    }
+
+
+    main p {
+        color: #000000;
+        text-align: center;
+        width: 60%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    main h2 {
+        color: black;
+        position: relative;
+        left: -130px
+    }
+
+    main img {
+
+        position: relative;
+        left: -130px;
+
+    }
+}

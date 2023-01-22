@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins';
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 65px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.menu a {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px; /* este border-radius vai funcionar com o hover, ao passar o mouse por cima do a, uma animação de hover vai acontecer e vai gerar uma borda arredondada por conta dessa definição do border-radius */
+    transition: 300ms;
+}
+
+.menu a:hover {
+    background-color: #d5011d;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 132px ); /* esta landing page não tem scroll, por isso foi necessário utilizar o calc para diminuir o tamanho do vh (subtraído com o tamanho do header) para que não tenha a possibilidade de scroll */
+    padding: 0 30px 30px;
+
+}
+
+.imagem-titulo {
+    max-width: 500px;
+}
+
+.descricao {
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.botao-trailer {
+    background-color: #ff0021;
+    color: #FFFFFF;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: 500ms ease-in-out;
+}
+
+.botao-trailer:hover {
+    transform: scale(1.1);
+}
+
+.fundo-video {
+    
+    position: absolute;
+    z-index: -1; /* 0 eixo z com -1 coloca o vídeo na profundidade de trás */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* o overflow: hidden evitou a existência do scroll na landing page */
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-video video {
+    height: 100vh;
+    
+}
+
+.fundo-video::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+    
+}
+
+
+.modal {
+    background-color: rgba(52, 52, 53, 0.749);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    border-radius: 25px;
+    gap: 15px;
+}
+
+.fechar-modal {
+    background-color: #FFFFFF;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fechar-modal:hover {
+    cursor: pointer;
+    background-color: black;
+
+}
+
+.fechar-modal:active {
+    background-color: orange;
+}
+
+#video {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto { /* percebe-se as classes juntas, isso significa que essa instrução só vale para alguma tag que tenha as duas classes, isso vai servir para o js onde iremos utilizar o classList.toggle para fazer a "mágica" acontecer (o pop-up de trailer irá aparecer ao ser clicado */
+    opacity: 1;
+    visibility: visible
+}
+
+
+
