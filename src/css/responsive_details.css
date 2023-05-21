@@ -1,37 +1,58 @@
-@media (max-width: 1200px) {
+@media screen and (min-width: 300px) and (max-width: 399px){
     body {
         background-color: #f44336;
+        height: 500px;
+
+    }
+
+    .cabecalho {
+        margin: 10px 0;
+        width: 100vw;
+        padding: 10px 10px;
+
+
+    }
+
+    .cabecalho nav a {
+        font-size: 20px;
+
+    }
+
+    main {
+        width: 100vw;
+        height: 680px;
+        margin: 2rem 0;
+        margin-left: .2rem;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+        display: flex;
+    }
+
+    .container {
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container ul {
+        justify-content: center;
+        margin: 0;
+    }
+
+    ul img {
+
+        width: 50px
     }
 
     .fundo-video {
         display: none;
     }
-
-    main {
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        gap: 30px;
-        background-color: #f44336;
-        height: 600px;
-    }
-
-    main h1 {
-        color: #ffffff;
-    }
-
-    main p {
-        color: #ffffff;
-    }
-
-    main h2 {
-        color: #ffffff;
-    }
 }
 
-@media (max-width: 500px) {
-
-    
+@media screen and (min-width: 400px) and (max-width: 799px ){
     .cabecalho {
         flex-wrap: wrap;
         justify-content: center;
@@ -39,34 +60,26 @@
     }
 
     main {
-        width: 380px;
+        height: 600px;
     }
 
-    main h1 {
-        color: #ffffff;
-        position: relative;
-       
+    .container {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    main {
+        width: 80vw;
+        margin-left: 7rem;
+        height: 500px;
     }
 
-
-    main p {
-        color: #ffffff;
-        text-align: center;
-        width: 85%;
-        font-size: 14px;
-        font-weight: bold;
+    .container {
+        font-size: 30px;
     }
 
-    main h2 {
-        color: #ffffff;
-        position: relative;
-        
-    }
-
-    main img {
-
-        position: relative;
-        left: -130px;
-
+    .container img {
+        width: 80px;
     }
 }
