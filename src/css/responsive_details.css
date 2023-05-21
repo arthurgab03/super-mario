@@ -2,7 +2,6 @@
     body {
         background-color: #f44336;
         height: 500px;
-
     }
 
     .cabecalho {
@@ -44,7 +43,7 @@
 
     ul img {
 
-        width: 50px
+        width: 50px;    
     }
 
     .fundo-video {
@@ -52,7 +51,16 @@
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 799px ){
+@media screen and (min-width: 400px) and (max-width: 799px){
+
+    body {
+        background-color: #f44336;
+    }
+
+    .fundo-video {
+        display: none;
+    }
+    
     .cabecalho {
         flex-wrap: wrap;
         justify-content: center;
@@ -63,12 +71,25 @@
         height: 600px;
     }
 
-    .container {
+
+
+    .container p {
         font-size: 20px;
+        margin-bottom: 1rem;
     }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    body {
+        background-color: #f44336;
+    }
+
+    .fundo-video {
+        display: none;
+    }
+
+    
     main {
         width: 80vw;
         margin-left: 7rem;
@@ -76,10 +97,15 @@
     }
 
     .container {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .container ul {
+        justify-content: center;
     }
 
     .container img {
         width: 80px;
     }
+
 }
